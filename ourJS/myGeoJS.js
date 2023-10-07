@@ -212,7 +212,7 @@ setTimeout(()=>{
         var p = d3.pointer(d);
         tooltip
             //设置显示位置
-            .style("left",(d3.select('#choropleth-map').node().getBoundingClientRect().left+p[0])+"px")
+            .style("left",(d3.select('#choropleth-map').node().getBoundingClientRect().left+p[0]+280)+"px")
             //要注意顶部距离，如果遮盖住了鼠标就会导致无法选中路径，此处设置了正右侧显示
             .style("top", (1400+p[1] )+"px")
             //设置为可见
